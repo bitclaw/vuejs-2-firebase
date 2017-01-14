@@ -1,0 +1,22 @@
+{
+  "name": "vuejs-2-firebase",
+  "version": "1.0.0",
+  "description": "VueJS 2 Firebase App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitclaw/vuejs-2-firebase.git"
+  },
+  "author": "Daniel Chavez <bitclaw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitclaw/vuejs-2-firebase/issues"
+  },
+  "homepage": "https://github.com/bitclaw/vuejs-2-firebase#readme",
+  "dependencies": {
+    "vue-cli": "^2.7.0"
+  }
+}
