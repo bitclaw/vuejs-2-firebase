@@ -110,16 +110,16 @@
   }
 </script>
 
-<style lang="sass">
+<style lang="scss">
 
   $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
   @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-  /*#app {*/
-  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
-  /*color: #2c3e50;*/
-  /*margin-top: 20px;*/
-  /*}*/
+  #app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 20px;
+  }
 </style>
