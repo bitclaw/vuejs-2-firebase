@@ -52,55 +52,51 @@
 </template>
 
 <script>
+  import jQuery from 'jquery'
+  global.jQuery = jQuery
 
-import jQuery from 'jquery'
-global.jQuery = jQuery
-var Bootstrap = require('bootstrap')
-import 'bootstrap.css'
+  import Hello from './components/Hello'
 
-import Hello from './components/Hello'
+  import Firebase from 'firebase'
 
-import Firebase from 'firebase'
+  import toastr from 'toastr'
 
-import toastr from 'toastr'
+  let config = {
+    apiKey: '...',
+    authDomain: '...',
+    databaseURL: 'https://vuejs-firebase-01-45ad6.firebaseio.com/',
+    storageBucket: '...',
+    messagingSenderId: '...'
+  }
 
-let config = {
-    apiKey: "...",
-    authDomain: "...",
-    databaseURL: "...",
-    storageBucket: "...",
-    messagingSenderId: "..."
-  };
+  let app = Firebase.initializeApp(config)
+  let db = app.database()
 
-let app = Firebase.initializeApp(config)
-let db = app.database()
+  let booksRef = db.ref('books')
 
-let booksRef = db.ref('books')
+  export default {
+    name: 'app',
 
+    firebase: {
+      books: booksRef
+    },
 
-export default {
-  name: 'app',
-
-  firebase: {
-    books: booksRef
-  },
-
-  data () {
-    return {
-      newBook: {
+    data () {
+      return {
+        newBook: {
           title: '',
           author: '',
           url: 'http://'
+        }
       }
-    }
-  },
+    },
 
-   methods: {
+    methods: {
       addBook: function () {
-        booksRef.push(this.newBook);
-        this.newBook.title = '';
-        this.newBook.author = '';
-        this.newBook.url = 'http://';
+        booksRef.push(this.newBook)
+        this.newBook.title = ''
+        this.newBook.author = ''
+        this.newBook.url = 'http://'
       },
       removeBook: function (book) {
         booksRef.child(book['.key']).remove()
@@ -108,19 +104,22 @@ export default {
       }
     },
 
-
-  components: {
-    Hello
+    components: {
+      Hello
+    }
   }
-}
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 20px;
-}
+<style lang="sass">
+
+  $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+  @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+  /*#app {*/
+  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
+  /*color: #2c3e50;*/
+  /*margin-top: 20px;*/
+  /*}*/
 </style>
