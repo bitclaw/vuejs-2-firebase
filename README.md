@@ -27,6 +27,9 @@ npm init
 npm install vue-cli --save
 vue init webpack vuejs-2-firebase
 npm install
+npm install firebase vuefire --save
+npm install jquery --save
+npm install bootstrap-sass --save
 npm run dev
 ````
 
