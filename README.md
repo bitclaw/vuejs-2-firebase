@@ -75,3 +75,4 @@ https://vuejs.org/v2/examples/firebase.html
 https://scotch.io/tutorials/building-a-google-keep-clone-with-vue-and-firebase-pt-1
 https://scotch.io/tutorials/building-a-google-keep-clone-with-vue-and-firebase-pt-2
 https://coligo.io/bookmarking-app-electron-vuejs-firebase/
+https://www.udemy.com/vuejs-2-the-complete-guide/?siteID=a1o1REVAqJg-exWOTV0WFdxs3NCRugXmwQ&LSNPUBID=a1o1REVAqJg
