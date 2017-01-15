@@ -67,3 +67,11 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Useful links
+
+https://www.airpair.com/firebase/posts/structuring-your-firebase-data
+https://vuejs.org/v2/examples/firebase.html
+https://scotch.io/tutorials/building-a-google-keep-clone-with-vue-and-firebase-pt-1
+https://scotch.io/tutorials/building-a-google-keep-clone-with-vue-and-firebase-pt-2
+https://coligo.io/bookmarking-app-electron-vuejs-firebase/
