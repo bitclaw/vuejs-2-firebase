@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <div class="page-header">
-      <h1>Vue.js 2 & Firebase <small>Sample Application by CodingTheSmartWay.com</small></h1>
+      <h1>Vue.js 2 & Firebase <small>Firebase Sample App</small></h1>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
