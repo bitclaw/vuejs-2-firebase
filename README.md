@@ -30,7 +30,18 @@ npm install
 npm install firebase vuefire --save
 npm install jquery --save
 npm install bootstrap-sass --save
+npm install sass-loader --save
+npm install node-sass --save
 npm run dev
+````
+
+Add the following code to build/webpack.base.conf.js
+
+```json
+ {
+   test: /\.scss$/,
+   loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+ },
 ````
 
 ## Build Setup
