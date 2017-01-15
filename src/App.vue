@@ -110,7 +110,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
   $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
   @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
